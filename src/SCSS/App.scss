@@ -1,0 +1,80 @@
+//colors
+// bg: rgba(11, 10, 33, 1)
+// cards: rgba(87, 87, 121, 1)
+// white
+// footer: rgba(32, 20, 80, 1)
+
+//fonts atkinson regular 400, 700
+//nunito 300 400
+
+@import "./mixins.scss";
+
+body {
+  // font-family: 'Atkinson Hyperlegible', sans-serif;
+
+  font-family: "Nunito", sans-serif;
+  background-color: rgba(11, 10, 33, 1);
+  margin: 0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.padding {
+  padding: 0px 35px;
+}
+
+.display-none {
+  display: none;
+}
+#App {
+  width: 100%;
+}
+
+.news-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include breakpoint-up(medium) {
+  .hide-for-desktop {
+    display: none;
+  }
+  .max-width {
+    max-width: 700px;
+  }
+}
+@include breakpoint-up(large) {
+  .max-width {
+    max-width: 900px;
+  }
+}
+@include breakpoint-up(extra-large) {
+  .max-width {
+    max-width: 1000px;
+  }
+}
+@include breakpoint-up(extra-extra-large) {
+  .max-width {
+    max-width: 1260px;
+  }
+}
+
+@include breakpoint-down(medium) {
+  .hide-for-mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+@import "./mixins.scss";
+
+.all-cards {
+  margin-top: 60px;
+  height: inherit;
+  width: 100%;
+  display: grid;
+  grid-gap: 23px;
+  grid-template-columns: 100%;
+  justify-items: center;
+  box-sizing: border-box;
+  transition: all 400ms;
+  margin-bottom: 100px;
+}
+
+@include breakpoint-up(large) {
+  .all-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@include breakpoint-up(extra-extra-large) {
+  .all-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,58 @@
+@import "./mixins.scss";
+
+.title-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+@include breakpoint-up(s-small) {
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@include breakpoint-up(medium) {
+  .title-div {
+    margin-top: 175px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+@include breakpoint-up(large) {
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+}
+@include breakpoint-up(extra-extra-large) {
+  h1 {
+    font-size: 55px;
+  }
+}

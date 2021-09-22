@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/vivo-blog/static/css/main.a0c09ce8.chunk.css",
+    "main.js": "/vivo-blog/static/js/main.49d69c86.chunk.js",
+    "main.js.map": "/vivo-blog/static/js/main.49d69c86.chunk.js.map",
+    "runtime-main.js": "/vivo-blog/static/js/runtime-main.01aab1c1.js",
+    "runtime-main.js.map": "/vivo-blog/static/js/runtime-main.01aab1c1.js.map",
+    "static/js/2.d179016d.chunk.js": "/vivo-blog/static/js/2.d179016d.chunk.js",
+    "static/js/2.d179016d.chunk.js.map": "/vivo-blog/static/js/2.d179016d.chunk.js.map",
+    "index.html": "/vivo-blog/index.html",
+    "static/css/main.a0c09ce8.chunk.css.map": "/vivo-blog/static/css/main.a0c09ce8.chunk.css.map",
+    "static/js/2.d179016d.chunk.js.LICENSE.txt": "/vivo-blog/static/js/2.d179016d.chunk.js.LICENSE.txt",
+    "static/media/heart-fill.4d981fbb.svg": "/vivo-blog/static/media/heart-fill.4d981fbb.svg",
+    "static/media/heart-outline.61038e18.svg": "/vivo-blog/static/media/heart-outline.61038e18.svg",
+    "static/media/trash-can.91403f73.svg": "/vivo-blog/static/media/trash-can.91403f73.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01aab1c1.js",
+    "static/js/2.d179016d.chunk.js",
+    "static/css/main.a0c09ce8.chunk.css",
+    "static/js/main.49d69c86.chunk.js"
+  ]
+}

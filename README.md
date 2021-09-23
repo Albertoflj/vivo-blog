@@ -4,10 +4,18 @@ Vivo Blogs is a web app where you can post and delete blogs for everyone to see!
 
 ## Features
 
-**- Add Blogs**\
-**- Like Blogs / View liked blogs**\
-**- Delete Blogs**\
-**- Read more about each blog**
+- Add Blogs
+- Like Blogs / View liked blogs
+- Delete Blogs
+- Read more about each blog
+
+## Everything I used to build it
+
+- HTML
+- SCSS
+- React
+- Javascript
+- Firebase (for the back-end)
 
 ## Technical
 
@@ -82,4 +90,25 @@ After we set the `object` that we want to send to the database, we again use the
     });
   }
 
+```
+
+### Deleting data from Firebase
+
+This function gets called after we confirm the deletion of a blog.
+We're still using fetch but this time we're using the `DELETE` method, and after we delete the blog, the page gets reloaded by the `props.load()` function.
+
+```javascript
+function deleteCard(id) {
+  fetch("API KEY/blogs/" + id + ".json", {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => console.log(response))
+    .then((data) => {
+      console.log(data);
+      props.load();
+    });
+}
 ```

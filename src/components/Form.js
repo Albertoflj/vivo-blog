@@ -29,6 +29,7 @@ function Form() {
       author: authorInput,
       shortDescription: shortDescriptionInput,
       description: descriptionInput,
+      liked: "0",
     };
 
     fetch(

@@ -32,6 +32,9 @@ ul {
 li {
   list-style: none;
 }
+.mainComponents {
+  min-height: 100%;
+}
 .padding {
   padding: 0px 35px;
 }
@@ -44,9 +47,17 @@ li {
 }
 
 .news-page {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+}
+.page {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.mh1 {
+  min-height: 100vh;
 }
 
 @include breakpoint-up(medium) {

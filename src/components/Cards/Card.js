@@ -10,9 +10,47 @@ import fullHeart from "../../icons/heart-fill.svg";
 import Modal from "./Modal";
 import Backdrop from "./Backdrop";
 //react Hooks
-import { useState } from "react";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
+import Title from "../Title";
 
 function Card(props) {
+  const history = useHistory();
+
+  function readMore() {
+    // history.push("/" + props.info.id);
+    return (
+      <Router>
+        <Switch>
+          <Route path={"/" + props.info.id}>
+            <div>
+              <h1>we did it</h1>
+            </div>
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
+
+  function addLikedBlog(args) {
+    fetch(
+      "https://vivo-blog-bd6d8-default-rtdb.europe-west1.firebasedatabase.app/blogs/" +
+        props.info.id +
+        ".json",
+      {
+        method: "PATCH",
+        body: JSON.stringify({
+          liked: args,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  }
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
   function deleteHandler() {
     setModalIsOpen(true);
@@ -24,13 +62,25 @@ function Card(props) {
   const [heart, setHeart] = useState(emptyHeart);
   const [heartVar, setHeartVar] = useState(0);
 
+  useEffect(() => {
+    setHeartVar(props.info.liked);
+    console.log(props.info.liked);
+    console.log(heartVar);
+    if (props.info.liked === 1) {
+      setHeart(fullHeart);
+    } else if (props.info.liked === 0) {
+      setHeart(emptyHeart);
+    }
+  }, []);
   function changeHeart() {
-    if (heartVar === 0) {
+    if (heartVar == 0) {
       setHeart(fullHeart);
       setHeartVar(1);
+      addLikedBlog(1);
     } else {
       setHeart(emptyHeart);
       setHeartVar(0);
+      addLikedBlog(0);
     }
   }
 
@@ -52,6 +102,9 @@ function Card(props) {
         props.load();
       });
   }
+  function editInfo(args) {
+    args = 1;
+  }
   return (
     <div className="card">
       <div className="card-image card-padding">
@@ -71,7 +124,9 @@ function Card(props) {
         >
           <img src={trashCan} alt="trash can"></img>
         </button>
-        <button className="card-button">Read More</button>
+        <button className="card-button" onClick={readMore}>
+          Read More
+        </button>
         <button className="card-button-heart" onClick={changeHeart}>
           <img src={heart} alt="heart"></img>
         </button>

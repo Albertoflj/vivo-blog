@@ -3,7 +3,7 @@ import "../../SCSS/AllCards.scss";
 
 import Card from "./Card";
 
-function AllCards() {
+function LikedCards() {
   // const [fetchedData, setFetchedData] = useState();
 
   // useEffect(() => {
@@ -36,14 +36,21 @@ function AllCards() {
             id: key,
             ...data[key],
           };
-          cards.push(cardIn);
+          if (cardIn.liked === 1) {
+            cards.push(cardIn);
+          }
         }
         setLoadedCards(cards);
         setIsLoading(false);
       });
   };
-  if (loadedCards > 2) {
-  }
+  //   if (loadedCards.map()) {
+  //     return (
+  //       <div>
+  //         <h1>You haven't liked any blogs.</h1>
+  //       </div>
+  //     );
+  //   }
 
   if (isLoading) {
     return (
@@ -65,4 +72,4 @@ function AllCards() {
   );
 }
 
-export default AllCards;
+export default LikedCards;

@@ -17,18 +17,20 @@ import Liked from "./components/Pages/Liked";
 // import Footer from "./components/Footer";
 // import { useState } from "react";
 import AddBlog from "./components/Pages/AddBlog";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 // import LoadBlogPage from "./components/LoadBlogPage";
 import { useState } from "react";
-import { scryRenderedComponentsWithType } from "react-dom/cjs/react-dom-test-utils.production.min";
+// import { scryRenderedComponentsWithType } from "react-dom/cjs/react-dom-test-utils.production.min";
 import Blog from "./components/Pages/Blog";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedCards, setLoadedCards] = useState([]);
+
   useEffect(() => {
     loadCards();
   }, []);
+
   var loadCards = () => {
     setIsLoading(true);
     fetch(

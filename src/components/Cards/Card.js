@@ -14,24 +14,13 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
-import Title from "../Title";
+// import Title from "../Title";
 
 function Card(props) {
   const history = useHistory();
 
   function readMore() {
-    // history.push("/" + props.info.id);
-    return (
-      <Router>
-        <Switch>
-          <Route path={"/" + props.info.id}>
-            <div>
-              <h1>we did it</h1>
-            </div>
-          </Route>
-        </Switch>
-      </Router>
-    );
+    history.push("/" + props.info.id);
   }
 
   function addLikedBlog(args) {
@@ -64,8 +53,6 @@ function Card(props) {
 
   useEffect(() => {
     setHeartVar(props.info.liked);
-    console.log(props.info.liked);
-    console.log(heartVar);
     if (props.info.liked === 1) {
       setHeart(fullHeart);
     } else if (props.info.liked === 0) {

@@ -1,0 +1,10 @@
+@import "./mixins.scss";
+
+.blog-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+.content-text {
+  text-align: left;
+  align-items: flex-start;
+}

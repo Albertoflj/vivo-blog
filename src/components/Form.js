@@ -43,6 +43,7 @@ function Form() {
       }
     ).then(() => {
       history.replace("/");
+      window.location.reload();
     });
 
     console.log(titleInput);

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vivo-blog/static/css/main.43416958.chunk.css",
-    "main.js": "/vivo-blog/static/js/main.fc2a86e1.chunk.js",
-    "main.js.map": "/vivo-blog/static/js/main.fc2a86e1.chunk.js.map",
+    "main.js": "/vivo-blog/static/js/main.82125a33.chunk.js",
+    "main.js.map": "/vivo-blog/static/js/main.82125a33.chunk.js.map",
     "runtime-main.js": "/vivo-blog/static/js/runtime-main.01aab1c1.js",
     "runtime-main.js.map": "/vivo-blog/static/js/runtime-main.01aab1c1.js.map",
     "static/js/2.c9fd9891.chunk.js": "/vivo-blog/static/js/2.c9fd9891.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.01aab1c1.js",
     "static/js/2.c9fd9891.chunk.js",
     "static/css/main.43416958.chunk.css",
-    "static/js/main.fc2a86e1.chunk.js"
+    "static/js/main.82125a33.chunk.js"
   ]
 }

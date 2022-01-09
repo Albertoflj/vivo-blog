@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vivo-blog/static/css/main.97c6a930.chunk.css",
-    "main.js": "/vivo-blog/static/js/main.6c0605c5.chunk.js",
-    "main.js.map": "/vivo-blog/static/js/main.6c0605c5.chunk.js.map",
+    "main.css": "/vivo-blog/static/css/main.43416958.chunk.css",
+    "main.js": "/vivo-blog/static/js/main.5fee912a.chunk.js",
+    "main.js.map": "/vivo-blog/static/js/main.5fee912a.chunk.js.map",
     "runtime-main.js": "/vivo-blog/static/js/runtime-main.01aab1c1.js",
     "runtime-main.js.map": "/vivo-blog/static/js/runtime-main.01aab1c1.js.map",
-    "static/js/2.351274dd.chunk.js": "/vivo-blog/static/js/2.351274dd.chunk.js",
-    "static/js/2.351274dd.chunk.js.map": "/vivo-blog/static/js/2.351274dd.chunk.js.map",
+    "static/js/2.f0eb0d82.chunk.js": "/vivo-blog/static/js/2.f0eb0d82.chunk.js",
+    "static/js/2.f0eb0d82.chunk.js.map": "/vivo-blog/static/js/2.f0eb0d82.chunk.js.map",
     "index.html": "/vivo-blog/index.html",
-    "static/css/main.97c6a930.chunk.css.map": "/vivo-blog/static/css/main.97c6a930.chunk.css.map",
-    "static/js/2.351274dd.chunk.js.LICENSE.txt": "/vivo-blog/static/js/2.351274dd.chunk.js.LICENSE.txt",
+    "static/css/main.43416958.chunk.css.map": "/vivo-blog/static/css/main.43416958.chunk.css.map",
+    "static/js/2.f0eb0d82.chunk.js.LICENSE.txt": "/vivo-blog/static/js/2.f0eb0d82.chunk.js.LICENSE.txt",
     "static/media/heart-fill.4d981fbb.svg": "/vivo-blog/static/media/heart-fill.4d981fbb.svg",
     "static/media/heart-outline.61038e18.svg": "/vivo-blog/static/media/heart-outline.61038e18.svg",
     "static/media/trash-can.91403f73.svg": "/vivo-blog/static/media/trash-can.91403f73.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.01aab1c1.js",
-    "static/js/2.351274dd.chunk.js",
-    "static/css/main.97c6a930.chunk.css",
-    "static/js/main.6c0605c5.chunk.js"
+    "static/js/2.f0eb0d82.chunk.js",
+    "static/css/main.43416958.chunk.css",
+    "static/js/main.5fee912a.chunk.js"
   ]
 }

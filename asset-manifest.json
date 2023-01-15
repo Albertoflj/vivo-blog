@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/vivo-blog/static/css/main.43416958.chunk.css",
-    "main.js": "/vivo-blog/static/js/main.82125a33.chunk.js",
-    "main.js.map": "/vivo-blog/static/js/main.82125a33.chunk.js.map",
+    "main.css": "/vivo-blog/static/css/main.e22c12ac.chunk.css",
+    "main.js": "/vivo-blog/static/js/main.c2ef9773.chunk.js",
+    "main.js.map": "/vivo-blog/static/js/main.c2ef9773.chunk.js.map",
     "runtime-main.js": "/vivo-blog/static/js/runtime-main.01aab1c1.js",
     "runtime-main.js.map": "/vivo-blog/static/js/runtime-main.01aab1c1.js.map",
     "static/js/2.c9fd9891.chunk.js": "/vivo-blog/static/js/2.c9fd9891.chunk.js",
     "static/js/2.c9fd9891.chunk.js.map": "/vivo-blog/static/js/2.c9fd9891.chunk.js.map",
     "index.html": "/vivo-blog/index.html",
-    "static/css/main.43416958.chunk.css.map": "/vivo-blog/static/css/main.43416958.chunk.css.map",
+    "static/css/main.e22c12ac.chunk.css.map": "/vivo-blog/static/css/main.e22c12ac.chunk.css.map",
     "static/js/2.c9fd9891.chunk.js.LICENSE.txt": "/vivo-blog/static/js/2.c9fd9891.chunk.js.LICENSE.txt",
     "static/media/heart-fill.4d981fbb.svg": "/vivo-blog/static/media/heart-fill.4d981fbb.svg",
     "static/media/heart-outline.61038e18.svg": "/vivo-blog/static/media/heart-outline.61038e18.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.01aab1c1.js",
     "static/js/2.c9fd9891.chunk.js",
-    "static/css/main.43416958.chunk.css",
-    "static/js/main.82125a33.chunk.js"
+    "static/css/main.e22c12ac.chunk.css",
+    "static/js/main.c2ef9773.chunk.js"
   ]
 }
